@@ -23,7 +23,7 @@ class App extends Component {
 
     }
 
-    componentDidUpdate(prevProps, prevState,) {
+    componentDidUpdate(prevState) {
         const prevContacts = prevState.contacts;
         const contacts = JSON.stringify(this.state.contacts);
 
