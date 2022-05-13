@@ -19,7 +19,7 @@ class App extends Component {
 
     componentDidMount() {
         const newContacts = JSON.parse(localStorage.getItem('contacts'));
-        { newContacts && this.setState({ contacts: newContacts }) }
+        newContacts && this.setState({ contacts: newContacts })
 
     }
 
